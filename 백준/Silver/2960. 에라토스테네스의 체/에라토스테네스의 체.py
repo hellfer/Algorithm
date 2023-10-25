@@ -12,8 +12,6 @@ for i in range(2, n + 1):
                 if len(result) == k:
                     print(result[-1])
                     break
-        if len(result) == k:
-            break
 
 
 

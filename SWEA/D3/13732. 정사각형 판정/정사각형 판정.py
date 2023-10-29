@@ -11,13 +11,13 @@ for test_case in range(1, T + 1):
     for i in range(N):
         for j in range(N):
             if array[i][j] == '#':
-                result.append((i, j))
+                result.append((i, j)) #(1,1), (1,2), (2,1), (2,2)
     
     # 막힌 칸들이 하나의 정사각형을 이루는지 확인
-    x1 = min(i[0] for i in result)
-    y1 = max(i[0] for i in result)
-    x2 = min(i[1] for i in result)
-    y2 = max(i[1] for i in result)
+    x1 = min(i[0] for i in result) #(1,1) 중에 가장 작은 값인 1저장
+    y1 = max(i[0] for i in result) #(1,1) 중에 가장 큰 값인 1저장
+    x2 = min(i[1] for i in result) #(1,2) 중에 가장 작은 값인 1저장
+    y2 = max(i[1] for i in result) #(1,2) 중에 가장 큰 값인 2저장
     
     square_size = max(y1 - x1, y2 - x2) + 1
     

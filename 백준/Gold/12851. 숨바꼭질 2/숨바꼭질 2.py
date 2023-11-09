@@ -13,7 +13,7 @@ def bfs():
                     visited[nx]=visited[x]+1
                     count[nx]=count[x]
                     queue.append(nx)
-                elif visited[nx]==visited[x]+1:
+                elif visited[nx]==visited[x]+1: #목적지가 8이라면 count[7]에 해당되는 경로는 모두 더해줌
                     count[nx]+=count[x]
 
                     

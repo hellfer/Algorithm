@@ -13,9 +13,9 @@ def bfs():
                     visited[nx]=visited[x]+1
                     count[nx]=count[x]
                     queue.append(nx)
-                elif visited[nx]==visited[x]+1: #목적지가 8이라면 count[7]에 해당되는 경로는 모두 더해줌
+                elif visited[nx]==visited[x]+1: 
                     count[nx]+=count[x]
-
+#목적지가 8이라면 count[7]에 해당되는 경로는 모두 더해줌
                     
 n,m=map(int,input().split())
 visited=[-1]*100001

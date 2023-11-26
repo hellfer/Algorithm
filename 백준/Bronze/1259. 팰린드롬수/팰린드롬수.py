@@ -1,8 +1,8 @@
-while True:
-    n = input()
-    if n == '0':
-        break
-    if n == n[::-1]:  
-        print("yes")
-    else:
-        print("no")
+while True: # 무한 반복문 시작
+    n = input() # 사용자로부터 입력 받기
+    if n == '0': # 입력 받은 값이 '0'이라면
+        break # 반복문을 종료
+    if n == n[::-1]: # 입력 받은 문자열이 뒤집었을 때와 같다면 (즉, 팰린드롬이라면)
+        print("yes") # "yes" 출력
+    else: # 입력 받은 문자열이 뒤집었을 때와 다르다면 (즉, 팰린드롬이 아니라면)
+        print("no") # "no" 출력

@@ -1,14 +1,12 @@
 x=input()
 y=input()
-a=0
-b=0
-
-while len(x)-a>=len(y):
-    if x[a:a+len(y)]==y:
-        b+=1
-        a+=len(y)
+count=0
+result=0
+while len(x)-count>=len(y):
+    if x[count:count+len(y)]==y:
+        result+=1
+        count+=len(y)
     else:
-        a+=1
+        count+=1
         
-print(b)
-        
+print(result)

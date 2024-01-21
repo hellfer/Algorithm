@@ -1,7 +1,7 @@
 import math
+n=int(input())
 
-t = int(input())
-for _ in range(t):
-    n, m = map(int, input().split())
-    combination = math.factorial(m) // (math.factorial(n) * math.factorial(m-n))
-    print(combination)
+for _ in range(n):
+    x,y=map(int,input().split())
+    result=math.factorial(y)//(math.factorial(x)*math.factorial(y-x))
+    print(result)

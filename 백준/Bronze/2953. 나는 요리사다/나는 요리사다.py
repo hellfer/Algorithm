@@ -1,13 +1,11 @@
-result = []
-max_score = 0
-winner = 0
-
-for i in range(1, 6):
-    scores = list(map(int, input().split()))
-    total_score = sum(scores)
-    result.append((i, total_score))
-    if total_score > max_score:
-        max_score = total_score
-        winner = i
-
-print(winner, max_score)
+result=[]
+max=0
+min=0
+for i in range(1,6):
+    x=list(map(int,input().split()))
+    result.append((i,sum(x)))
+    if max<sum(x):
+        max=sum(x)
+        min=i
+        
+print(min,max)
